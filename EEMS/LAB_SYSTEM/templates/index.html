@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/img_style.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="text">Change your character</h1>
+        </header> 
+        <div class="parent1">
+            <aside class="aside1"></aside>
+            <main>
+                <section id="login" align="center">
+                    <form method="post" action="/login">
+                        <div>
+                            <div class="nes-field">
+                                <label for="name_field">Your mailaddress</label>
+                                <input type="text" name = "mail" id="name_field" class="nes-input">
+                            </div>
+                            <br>
+                            <input type="submit" class="nes-btn is-success" value="turn the gacha">
+                            
+                        </div>
+                    </form>
+                    <br>
+                    <form method="post" action="/return">
+                        <input type="submit" class="nes-btn is-success" value="Back to ISDLMAP">
+                    </form>
+                </section>
+            </main>
+            <aside class="aside2"></aside>
+        </div>
+       <footer id="footer">
+    
+       </footer>
+     </body>
+</html>

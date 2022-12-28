@@ -1,0 +1,367 @@
+/*.star{
+    display: flex;
+}*/
+@font-face {
+	font-family: PixelMplus10 Regular;
+	src: url('https://cdn.leafscape.be/PixelMplus/PixelMplus10-Regular_web.woff2') format("woff2");
+}
+.chara{
+    width:400px;
+    height:400px;
+}
+.make_messages {
+    margin-top: -1%;
+    margin-left: 1%;
+    position: absolute;
+    width: 200px;
+    /*margin: 0 auto;*/
+    font-size: 1.0rem;
+    color: #FFF;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 0 4px #FFF inset;
+    background-color: rgba(0,0,0,0.9);
+}
+.test1 {
+    width: 96%;
+    margin: 2%;
+    white-space: pre;
+    overflow: hidden;
+    -webkit-animation: ozDq 1s steps(10, end) ;
+    /* プロパティは順に name, duration, timing-function です */
+}
+.test1:after {
+    content: '▶';
+    -webkit-animation: ozPulse 1s infinite ease;
+    /* プロパティは順に name, duration, iteration-count, timing-function です */
+}
+@-webkit-keyframes ozDq { from { width: 0; } } /* 開始地点の指定 */
+@-moz-keyframes ozDq { from { width: 0 } }
+@-webkit-keyframes ozPulse {  /* 透明度の指定 */
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@-moz-keyframes ozPulse {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+* {
+    box-sizing: border-box;
+}
+
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+html{
+    width: 100%;
+}
+body {
+    font-family: PixelMplus10 Regular;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;*/
+    font-size: 0.9rem;
+    background-image: url(../img/block3.png);
+    background-repeat: repeat;
+}
+nav{
+    margin: 0 0 0 auto;
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+nav li {
+    list-style: none;
+    
+}
+nav li a {
+    color: #fff;
+    font-weight: bold;
+    transition: all  0.3s ease;
+    filter: drop-shadow(1px 1px 2px #121212);
+}
+nav li a:hover {
+    color: #e03131;
+}
+main{
+    width: 100%;
+}
+.parent{
+    width: 100%;
+    display: flex;  
+    position: relative;
+}
+td{
+    width: 2.5%;
+    height: 4%;
+}
+.avatar{
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.avatar:hover{
+    box-shadow: 0 12px 12px gray;
+}
+.make_message{
+    display: none;
+}
+/*
+.make_messages{
+  margin-top: -1%;
+  margin-left: 1%;
+  position: absolute;                   
+  display: inline-block;                     
+  padding: 2px;                        
+  background-color:rgb(154, 205, 50, 0.5);       
+  width:180px;                         
+  font-size: 100%; 
+}
+.make_messages:after{
+  border-right: 12px solid rgb(154, 205, 50, 0.5);   
+  border-top: 10px solid transparent;     
+  border-bottom: 10px solid transparent;  
+  left: -12px;                           
+  top: 5%;                                
+  content: "";                      
+  position: absolute; 
+}
+*/
+@media screen and (min-width:1841px) {
+    .parent1{
+        width: 100%;
+        height: 900px;
+        display: flex;  
+        position: relative;
+        background-image: url(../img/back.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    aside {
+        width: 70px;
+        background-image: url(../img/th.jpg);
+        background-size: 80px;
+        background-repeat: repeat;
+    }
+    .sec-title {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 4.5rem;
+        filter: drop-shadow(1px 1px 10px #c0c0c0);
+        position: absolute;
+        top: 10%;
+    }
+    .fixed-bg {
+        height: 300px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    #header {
+        padding: 0px 4% 0px;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url(../img/th.jpg);
+        background-size: 50px;
+        background-repeat: repeat;
+        position: relative;
+    }
+    #header h1{
+        margin: 0;
+        padding: 0;
+        color:rgb(253, 253, 253);
+        filter: drop-shadow(1px 1px 10px #0ee007);
+        font-size: 4.5rem;
+        text-align: left; 
+    }
+    #footer{
+        width: 100%;
+        height: 100px;
+        background-image: url(../img/th.jpg);
+        background-size: 80px;
+        background-repeat: repeat;
+        position: relative;
+    }
+    #map{
+        width:100%;
+        height:1350px;
+        text-align: center;
+        position:center;
+        background-image: url(../img/map7.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #ISDLmap .ISDLmap-img{
+        height: 150px;
+        background-image: url(../img/ISDL.jpg);
+        position: relative;
+    }
+}
+
+@media screen and (max-width:1840px) {
+    .parent1{
+        width: 100%;
+        height: 600px;
+        display: flex;  
+        position: relative;
+        background-image: url(../img/back.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    aside {
+        width: 50px;
+        background-image: url(../img/th.jpg);
+        background-size: 50px;
+        background-repeat: repeat;
+    }
+    .sec-title {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 4.5rem;
+        filter: drop-shadow(1px 1px 10px #c0c0c0);
+        position: absolute;
+        top: 10%;
+    }
+    .fixed-bg {
+        height: 300px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    #header {
+        padding: 30px 4% 10px;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url(../img/th.jpg);
+        background-size: 50px;
+        background-repeat: repeat;
+        position: relative;
+    }
+    #header h1{
+        margin: 0;
+        padding: 0;
+        color:rgb(253, 253, 253);
+        filter: drop-shadow(1px 1px 10px #0ee007);
+        font-size: 3.5rem;
+        text-align: left; 
+    }
+    #footer{
+        width: 100%;
+        height: 80px;
+        background-image: url(../img/th.jpg);
+        background-size: 50px;
+        background-repeat: repeat;
+        position: relative;
+    }
+    #map{
+        width:100%;
+        height:960px;
+        text-align: center;
+        position:center;
+        background-image: url(../img/map7.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #ISDLmap .ISDLmap-img{
+        height: 200px;
+        background-image: url(../img/ISDL.jpg);
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width:896px) {
+    .parent1{
+        width: 100%;
+        height: 600px;
+        display: flex;  
+        position: relative;
+        background-image: url(../img/back.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    aside {
+        width: 10px;
+        background-image: url(../img/th.jpg);
+        background-size: 30px;
+        background-repeat: repeat;
+    }
+    .sec-title {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        filter: drop-shadow(1px 1px 10px #c0c0c0);
+        position: absolute;
+        top: 10%;
+    }
+    .fixed-bg {
+        height: 300px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    #header {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-image: url(../img/th.jpg);
+        background-size: 30px;
+        background-repeat: repeat;
+        position: relative;
+    }
+    #header h1{
+        margin: 0;
+        padding: 0;
+        color:rgb(253, 253, 253);
+        filter: drop-shadow(1px 1px 10px #0ee007);
+        font-size: 2rem;
+        text-align: left; 
+    }
+    #footer{
+        width: 100%;
+        height: 30px;
+        background-image: url(../img/th.jpg);
+        background-size: 30px;
+        background-repeat: repeat;
+        position: relative;
+    }
+    #map{
+        width:100%;
+        height:574px;
+        text-align: center;
+        position:center;
+        background-image: url(../img/map7.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #ISDLmap .ISDLmap-img{
+        height: 100px;
+        background-image: url(../img/ISDL.jpg);
+        position: relative;
+    }
+}
